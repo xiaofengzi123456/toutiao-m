@@ -73,7 +73,6 @@ export default {
     },
     async loadCurrentUser () {
       const { data } = await reqCurrentUser()
-      console.log(data)
       this.CurrentUser = data.data
     }
   },
