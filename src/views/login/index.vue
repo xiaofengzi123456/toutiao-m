@@ -83,7 +83,9 @@ export default {
         // console.log(result)
         this.$store.commit('SETUSER', result.data.data)
         Toast.success('登录成功')
-        this.$router.back()// 试验
+        this.$store.commit('REMOVECACHEPAGES', 'LayoutIndex')
+        // this.$router.back()// 试验
+        this.$router.push(this.$route.query.redirect || '/')
       } catch (error) {
         Toast.fail('登录失败,手机号或验证码错误')
       }

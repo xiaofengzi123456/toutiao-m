@@ -10,50 +10,98 @@
         <van-icon name="ellipsis" size="middle" color="white" />
       </div>
     </van-nav-bar>
-    <h1 class="title">
-      程序员程序员程序员程序员程序员程序员程序员程序员程序员
-    </h1>
-    <van-cell center class="author-info">
-      <van-image
-        class="avatar"
-        slot="icon"
-        src="https://img01.yzcdn.cn/vant/cat.jpeg"
-        round
-        fit="cover"
-      />
-      <span slot="title" class="nickname">天涯小型可</span>
-      <span slot="label" class="pubdate">14小时前</span>
-      <van-button
-        slot="default"
-        round
-        :type="isFollow ? 'default' : 'info'"
-        :icon="isFollow ? '' : 'plus'"
-        :disabled="isDisabled"
-        class="follow-btn"
-        @click="handleFollow"
-      >
-        {{ isFollow ? '已关注' : '关注' }}
-      </van-button>
-    </van-cell>
-    <div class="markdown-body">
-      <p>nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks</p>
-      <p>nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks</p>
-      <p>nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks</p>
-      <p>nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks</p>
-      <p>nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks</p>
-      <p>nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks</p>
-      <p>nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngkskcjksdfhdjfdjbdfjmnbgfjjdkskwitiuy5875389tuurgkdmmz,xmaksjdksjgjiorioeopwjfieifjrfdb,c</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v</p>
+    <div class="article-wrap">
+      <h1 class="title">
+        程序员程序员程序员程序员程序员程序员程序员程序员程序员
+      </h1>
+      <van-cell center class="author-info">
+        <van-image
+          class="avatar"
+          slot="icon"
+          src="https://img01.yzcdn.cn/vant/cat.jpeg"
+          round
+          fit="cover"
+        />
+        <span slot="title" class="nickname">天涯小型可</span>
+        <span slot="label" class="pubdate">14小时前</span>
+        <van-button
+          slot="default"
+          round
+          :type="isFollow ? 'default' : 'info'"
+          :icon="isFollow ? '' : 'plus'"
+          :disabled="isDisabled"
+          class="follow-btn"
+          @click="handleFollow"
+        >
+          {{ isFollow ? '已关注' : '关注' }}
+        </van-button>
+      </van-cell>
+      <div class="markdown-body">
+        <p>
+          nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks
+        </p>
+        <p>
+          nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks
+        </p>
+        <p>
+          nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks
+        </p>
+        <p>
+          nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks
+        </p>
+        <p>
+          nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks
+        </p>
+        <p>
+          nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngks
+        </p>
+        <p>
+          nidjhhhdnvnnvnvmishdfjdnsnjfdjfgbhjvcvndsjkksallvdjgjkgjrriekaskldasvmmdndjkfgjksdfmmdnbdfjjngkskcjksdfhdjfdjbdfjmnbgfjjdkskwitiuy5875389tuurgkdmmz,xmaksjdksjgjiorioeopwjfieifjrfdb,c
+        </p>
+        <br>
+        <p>正文结束</p>
+      </div>
+      <CommentList :source="article_id" :list="commentList" @update-total-count="totalCommentCount = $event" @showReplyPop="handleReplyPop"></CommentList>
     </div>
     <div class="footer">
-      <van-button type="default" round class="comment-btn">写评论</van-button>
-      <van-icon name="comment-o"></van-icon>
-      <van-icon name="star-o" v-if="!isCollect" @click="handleCollect"></van-icon>
-      <van-icon name="star" color="orange" v-else @click="handleCollect"></van-icon>
+      <van-button type="default" round class="comment-btn" @click="showPopup">写评论</van-button>
+      <van-icon name="comment-o" :badge="totalCommentCount"></van-icon>
+      <van-icon
+        name="star-o"
+        v-if="!isCollect"
+        @click="handleCollect"
+      ></van-icon>
+      <van-icon
+        name="star"
+        color="orange"
+        v-else
+        @click="handleCollect"
+      ></van-icon>
       <van-icon name="good-job-o" v-if="!isLike" @click="handleLike"></van-icon>
-      <van-icon name="good-job" color="orange" v-else @click="handleLike"></van-icon>
+      <van-icon
+        name="good-job"
+        color="orange"
+        v-else
+        @click="handleLike"
+      ></van-icon>
       <van-icon name="share-o"></van-icon>
     </div>
+    <van-popup v-model="isShowPopup" position="bottom" class="sendCommentPop">
+      <van-field
+        v-model="message"
+        rows="4"
+        autosize
+        type="textarea"
+        maxlength="50"
+        placeholder="优质评论会被优先展示"
+        show-word-limit
+        ref="commentInput"
+      />
+      <span @click="sendComment">发布</span>
+    </van-popup>
+    <van-popup v-model="isShowReply" position="bottom">
+      <CommentReply :comment="comment" :article_id="article_id" @close="isShowReply = false" v-if="isShowReply"></CommentReply>
+    </van-popup>
   </div>
 </template>
 
@@ -61,7 +109,16 @@
 import './github-markdown.css'
 // import { reqArticleContent } from '@/api/article'
 import { reqFollowUser, reqCancelFollow } from '@/api/user'
-import { reqArticleContent, reqCollect, reqCancleCollect, reqLike, reqCancleLike } from '@/api/article'
+import {
+  reqArticleContent,
+  reqCollect,
+  reqCancleCollect,
+  reqLike,
+  reqCancleLike
+} from '@/api/article'
+import { reqSendComments } from '@/api/comment'
+import CommentList from './components/comment-list.vue'
+import CommentReply from './components/comment-reply.vue'
 export default {
   name: 'ArticleIndex',
   data () {
@@ -69,8 +126,18 @@ export default {
       isFollow: false,
       isDisabled: false,
       isLike: false,
-      isCollect: false
+      isCollect: false,
+      isShowPopup: false,
+      message: '',
+      commentList: [],
+      totalCommentCount: 0,
+      isShowReply: false,
+      comment: {}
     }
+  },
+  components: {
+    CommentList,
+    CommentReply
   },
   props: {
     article_id: {
@@ -136,6 +203,34 @@ export default {
         this.cancleLike()
         this.$toast.success('取消点赞成功')
       }
+    },
+    showPopup () {
+      this.isShowPopup = true
+      this.$nextTick(() => {
+        this.$refs.commentInput.focus()
+      })
+    },
+    async sendComment () {
+      if (!this.message.trim()) {
+        this.$toast.fail('发布内容不能为空')
+        return
+      }
+      this.$toast.loading({
+        message: '发布中...',
+        forbidClick: true
+      })
+      const result = await reqSendComments({ target: this.article_id, content: this.message })
+      // console.log(result)
+      this.commentList.unshift(result.data.data.new_obj)
+      this.message = ''
+      this.isShowPopup = false
+      this.$toast.success('发布成功')
+      this.totalCommentCount += 1
+    },
+    handleReplyPop (comment) {
+      this.isShowReply = true
+      // console.log(comment)
+      this.comment = comment
     }
   },
   created () {
@@ -171,20 +266,23 @@ export default {
     height: 29px;
   }
 }
-.markdown-body {
-  padding: 14px;
+.article-wrap {
+  padding: 0 14px;
   background-color: #fff;
   overflow-y: auto;
   position: fixed;
-  top: 195px;
+  top: 46px;
   bottom: 51px;
   left: 0;
   right: 0;
+  .markdown-body {
+    padding: 10px 14px;
+  }
 }
 .footer {
   height: 51px;
   box-sizing: border-box;
-  padding: 10px 16px;
+  padding: 10px 26px;
   border-top: 1px solid rgb(156, 151, 151);
   // border-bottom: 1px solid rgb(70, 67, 67);
   background-color: #fff;
@@ -196,8 +294,21 @@ export default {
   justify-content: space-between;
   align-items: center;
   .comment-btn {
-    width: 130px;
+    width: 100px;
     height: 30px;
+    color: #8d8686;
+  }
+}
+.sendCommentPop {
+  display: flex;
+  align-items: center;
+  .van-field {
+    width: 320px;
+    font-size: 14px;
+  }
+  span {
+    font-size: 14px;
+    margin-left: 10px;
   }
 }
 </style>

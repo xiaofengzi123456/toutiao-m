@@ -34,7 +34,7 @@ export default {
     return {
       active: 0,
       channels: [],
-      isShowChannelEdit: false
+      isShowChannelEdit: false,
     }
   },
   components: {

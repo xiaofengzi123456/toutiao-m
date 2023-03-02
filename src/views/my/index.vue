@@ -10,7 +10,7 @@
           :src="CurrentUser.photo"
         />
         <span class="name" slot="title">昵称</span>
-        <van-button class="update-btn" slot="default" round size="small">编辑资料</van-button>
+        <van-button class="update-btn" slot="default" round size="small" to="/user/profile">编辑资料</van-button>
       </van-cell>
       <van-grid :border="false" class="data-info">
         <van-grid-item class="data-info-item">
@@ -33,7 +33,7 @@
     </van-cell-group>
     <div class="not-login" v-else>
       <div>
-        <img class="oppo" src="./oppo.jpg" alt="" @click="$router.push('/login')">
+        <img class="oppo" src="./oppo.jpg" @click="$router.push({ name: 'login', query: {redirect: '/my'} })">
       </div>
       <div class="text">注册 / 登录</div>
     </div>
@@ -42,7 +42,7 @@
       <van-grid-item class="nav-grid-item" icon-prefix="toutiao" icon="lishi" text="历史" />
     </van-grid>
     <van-cell title="消息通知" is-link to="/"  v-if="user" />
-    <van-cell class="mb-4" title="小智同学" is-link to="/" />
+    <van-cell class="mb-4" title="小智同学" is-link to="/user/chat" />
     <van-cell class="logout-cell" title="退出登录" v-if="user" @click="onLogout" />
   </div>
 </template>
@@ -73,13 +73,12 @@ export default {
     },
     async loadCurrentUser () {
       const { data } = await reqCurrentUser()
+      // console.log(data);
       this.CurrentUser = data.data
     }
   },
   created () {
-    // if (user) {
     this.loadCurrentUser()
-    // }
   }
 }
 </script>
@@ -107,6 +106,7 @@ export default {
       }
       .update-btn {
         height: 16px;
+        line-height: 16px;
         font-size: 10px;
         color: #666;
         vertical-align: middle;

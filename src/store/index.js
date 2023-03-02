@@ -8,7 +8,8 @@ const USER_KEY = 'toutiao-user'
 
 export default new Vuex.Store({
   state: {
-    user: getItem(USER_KEY)
+    user: getItem(USER_KEY),
+    cachePages: ['LayoutIndex']
   },
   getters: {
   },
@@ -16,6 +17,16 @@ export default new Vuex.Store({
     SETUSER (state, data) {
       state.user = data
       setItem(USER_KEY, state.user)
+    },
+    ADDCACHEPAGES (state, pageName) {
+      if (state.cachePages.indexOf(pageName) === -1) {
+        state.cachePages.push(pageName)
+      }
+    },
+    REMOVECACHEPAGES (state, pageName) {
+      if (state.cachePages.indexOf(pageName) !== -1) {
+        state.cachePages.splice(state.cachePages.indexOf(pageName), 1)
+      }
     }
   },
   actions: {
